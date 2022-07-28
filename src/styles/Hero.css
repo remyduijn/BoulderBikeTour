@@ -3,17 +3,32 @@ div.masthead {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    background: url("../images/remy-big.jpg");
+    background: url("../images/bikes-home.jpg");
     background-position: center;
     background-repeat: no-repeat;
-}
-
-@media (min-width:1457px) {div.masthead {
     background-size: cover;
-}}
+}
+ 
+/* @media (min-width:1457px) {div.masthead {
+    background-size: cover;
+}} */
 
-@media (max-width:425px) {div.masthead {
+/* @media (max-width:425px) {div.masthead {
     background: url("../images/remy-small.jpg");
     background-size: cover;
     padding-right: 8rem;
-}}
+}}  */
+
+.text-small {
+    font-size: 24px;
+    text-shadow: 1px 1px 4px #000000;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.date {
+    font-size: 20px;
+    color: rgba(84, 110, 122);
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 15px;
+    padding: 10px;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../styles/Hero.css'
 import {
   HeroContainer,
@@ -8,22 +8,21 @@ import {
   HeroP
 } from './HeroElements';
 
-function HeroSection() {
-  const [hover, setHover] = useState(false);
-
-  const onHover = () => {
-    setHover(!hover);
-  };  
+function HeroSection () {
   return (
     <HeroContainer id='home'>
       <HeroBg>
         <div className='masthead'></div>
       </HeroBg>
       <HeroContent>
-        <HeroH1>Web Designer and Developer</HeroH1>
+        <HeroH1><a className='text-small'>THE</a> Boulder Bike Tour</HeroH1>
         <HeroP>
-        &lt; Front-end, Back-end & Wordpress /&gt; 
+          A once in a 10-year opportunity to race the Boulder and the Front Range of Colorado.
         </HeroP>
+        <br></br>
+        <p className="date">
+          01-04-2023 
+        </p>
       </HeroContent>
     </HeroContainer>
   );

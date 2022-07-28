@@ -1,23 +1,23 @@
-#logo-small {
+/* #logo-small {
     display: none;
     font-family: 'Montserrat Alternates', sans-serif;
-}
+} */
 
-@media (max-width: 425px){#logo-small {
+/* @media (max-width: 425px){#logo-small {
     display: block;
     border: 1px solid #fff !important;
     border-radius: 50%;
     padding-left: 5px;
     padding-right: 5px;
-    padding-top: 7px;
+    padding-top: 7px; 
     padding-bottom: 7px;
-}}
+}} */
 
-#logo-wide {
-    display: block;
+#logo {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
-@media (max-width: 425px){#logo-wide {
-    display: none;
-}}
+.nav-links:hover {
+    border-bottom: 2px solid #ffab00;
+}
+

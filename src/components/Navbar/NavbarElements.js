@@ -3,11 +3,10 @@ import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? '#263238' : 'transparent')};
-  height: 80px;
-  margin-top: -80px;
+  background: #000;
+  height: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 1rem;
   position: sticky; 
@@ -21,7 +20,6 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
   display: flex;
-  justify-content: space-between;
   height: 80px;
   z-index: 1;
   width: 100%;
@@ -31,12 +29,12 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled(LinkR)`
   color: #fff;
-  justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
+  margin-right: 1.5rem;
   font-weight: bold;
   text-decoration: none;
 `;
@@ -47,7 +45,7 @@ export const MobileIcon = styled.div`
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
-    top: 0;
+    bottom: 25px;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
@@ -57,10 +55,7 @@ export const MobileIcon = styled.div`
 
 export const NavMenu = styled.ul`
   display: flex;
-  align-items: center;
-  list-style: none;
-  text-align: center;
-  margin-right: -22px;
+  align-items: left;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -68,12 +63,16 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
+  // height: 80px;
 `;
 
 export const NavBtn = styled.nav`
+  position: absolute;
+  top: 5px;
+  right: 24px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -86,7 +85,8 @@ export const NavLinks = styled(LinkS)`
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%;
+  height: 50%;
+  margin-top: 1.2rem;
   cursor: pointer;
 
   &.active {
@@ -95,21 +95,10 @@ export const NavLinks = styled(LinkS)`
 `;
 
 export const NavBtnLink = styled(LinkR)`
-  border-radius: 50px;
-  background: #ffab00;
-  white-space: nowrap;
   padding: 10px 22px;
-  color: #010606;
+  color: #fff;
   font-size: 16px;
-  outline: none;
-  border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #f5f5f5;
-    color: #010606;
-  }
 `;

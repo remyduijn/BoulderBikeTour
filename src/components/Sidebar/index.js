@@ -6,8 +6,6 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
-  SidebarRoute,
-  SideBtnWrap
 } from './SidebarElements';
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -16,46 +14,25 @@ const Sidebar = ({ isOpen, toggle }) => {
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
-      <SidebarWrapper>
+      {/* <SidebarWrapper> */}
         <SidebarMenu>
-          <SidebarLink
-            to='about'
-            onClick={toggle}
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact='true'
-            offset={-80}
-          >
-            About
+          <SidebarLink>
+            Photo gallery
           </SidebarLink>
-          <SidebarLink
-            to='portfolio'
-            onClick={toggle}
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact='true'
-            offset={-80}
-          >
-            Portfolio
+          <SidebarLink>
+            Live positions
           </SidebarLink>
-          <SidebarLink
-            to='resume'
-            onClick={toggle}
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact='true'
-            offset={-80}
-          >
-            Resume
+          <SidebarLink>
+            Contest
+          </SidebarLink>
+          <SidebarLink>
+            Register
+          </SidebarLink>
+          <SidebarLink>
+            Contact
           </SidebarLink>
         </SidebarMenu>
-        <SideBtnWrap>
-          <SidebarRoute to='/contact'>Contact</SidebarRoute>
-        </SideBtnWrap>
-      </SidebarWrapper>
+      {/* </SidebarWrapper> */}
     </SidebarContainer>
   );
 };

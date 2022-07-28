@@ -1,43 +1,13 @@
-h1 {
-    color: #263238;
-} @media (max-width: 425px){h1 {
-    font-size: 22px;
-}}
 
-h3 {
-    color: #263238;
-    margin-top: 2rem;
-} @media (max-width: 425px){h3 {
-    font-size: 18px;
-}}
 
-p {
-    color: #546e7a;
-    padding-top: 5px;
+div.masthead2 {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: url("../images/bikes2-home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.img-position {
-    position: absolute;
-    margin-top: -3.5rem;
-} @media (max-width: 425px){.img-position {
-    margin-top: -4rem;
-}}@media (max-width: 375px){.img-position {
-    margin-top: -4.5rem;
-}}
-
-.about-text {
-    margin-left: 4.2rem;
-}
-
-.line {
-    width: 192px;
-    border-bottom: 3px solid #ffd740;
-    position: relative;
-    z-index: 3;
-    /* margin-bottom: 3.5rem; */
-    margin-top: 10px;
-    margin-left: 2.5rem;
-} @media (max-width: 425px){.line {
-    width: 135px;
-    margin-left: 1.7rem;
-}}

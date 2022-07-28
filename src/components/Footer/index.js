@@ -1,20 +1,15 @@
 import React from 'react';
-import {
-  FaFacebook,
-  FaInstagram,
-  FaGithub,
-  FaLinkedin
-} from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 import {
   FooterContainer,
   FooterWrap,
   SocialMedia,
   SocialMediaWrap,
-  SocialLogo,
+  FooterLogo,
   WebsiteRights,
   SocialIcons,
-  SocialIconLink
+  SocialIconLink,
+  Divider
 } from './FooterElements';
 
 const Footer = () => {
@@ -26,22 +21,25 @@ const Footer = () => {
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to='/' onClick={toggleHome}>RD</SocialLogo>
-            <WebsiteRights>Remy Duijn © 2022 All rights reserved.</WebsiteRights>
+            <FooterLogo to='/' onClick={toggleHome}>BoulderBikeTour</FooterLogo>
             <SocialIcons>
-              <SocialIconLink href='https://www.linkedin.com/in/remy-duijn-00827036/' target='_blank' aria-label='Linkedin' rel='noopener noreferrer'>
-                <FaLinkedin />
+              <SocialIconLink>
+                <a>Disclamer</a>
               </SocialIconLink>
-              <SocialIconLink href='https://github.com/remyduijn' target='_blank' aria-label='Github' rel='noopener noreferrer'>
-                <FaGithub />
+              <Divider><b>|</b></Divider>
+              <SocialIconLink>
+                <a>Privacy</a>
               </SocialIconLink>
-              <SocialIconLink href='https://www.instagram.com/remyduijn/?hl=en' target='_blank' aria-label='Instagram' rel='noopener noreferrer'>
-                <FaInstagram />
+              <Divider><b>|</b></Divider>
+              <SocialIconLink>
+                <a>News</a>
               </SocialIconLink>
-              <SocialIconLink href='https://www.facebook.com/remy.duijn/' target='_blank' aria-label='Facebook' rel='noopener noreferrer'>
-                <FaFacebook />
+              <Divider><b>|</b></Divider>
+              <SocialIconLink>
+                <a>About</a>
               </SocialIconLink>
             </SocialIcons>
+            <WebsiteRights>© 2022 All rights reserved Boulder Bike Tour</WebsiteRights>
           </SocialMediaWrap>
         </SocialMedia>
       </FooterWrap>

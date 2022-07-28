@@ -6,7 +6,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 650px;
   position: relative;
   z-index: 1;
 
@@ -17,25 +17,14 @@ export const HeroContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(rgba(255, 171, 0, 0.2)),
-        to(rgba(255, 171, 0, 0.2))
-      ),
-      -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(transparent));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(transparent));
     background: linear-gradient(
         180deg,
-        rgba(255, 171, 0, 0.2) 0%,
-        rgba(255, 171, 0, 0.6) 100%
+        rgba(255, 171, 0, 0.4) 0%,
+        rgba(255, 171, 0, 0.1) 60%
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
-  }
-
-  @media screen and (min-width: 1440px) {
-    height: 950px;
   }
 `;
 
@@ -50,14 +39,6 @@ export const HeroBg = styled.div`
   overflow: hidden;
 `;
 
-export const VideoBg = styled.video`
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  background: #232a34;
-`;
-
 export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1200px;
@@ -67,16 +48,14 @@ export const HeroContent = styled.div`
   margin-top: -4rem;
   flex-direction: column;
   align-items: center;
-
-  @media screen and (min-width: 1440px) {
-    margin-top: -7rem;
-  }
 `;
 
 export const HeroH1 = styled.h1`
   color: #fff;
-  font-size: 48px;
+  font-size: 48px; 
   text-align: center;
+  text-shadow: 1px 1px 4px #000000;
+  font-family: 'Roboto', sans-serif;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -93,6 +72,8 @@ export const HeroP = styled.p`
   font-size: 24px;
   text-align: center;
   max-width: 600px;
+  text-shadow: 1px 1px 4px #000000;
+  font-family: 'Roboto', sans-serif;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;

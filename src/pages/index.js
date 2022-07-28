@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
+import Footer2 from '../components/Footer2';
 import HeroSection from '../components/HeroSection';
+import CountdownSection from '../components/CountdownSection';
 import AboutSection from '../components/AboutSection';
-import ResumeSection from '../components/ResumeSection';
-import {homeObjOne} from '../components/AboutSection/Data';
-import Portfolio from '../components/Portfolio';
+import InfoSection from '../components/InfoSection';
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,9 +19,10 @@ function Home() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
-      <AboutSection {...homeObjOne} />
-      <Portfolio />
-      <ResumeSection />
+      <CountdownSection />
+      <AboutSection />
+      <InfoSection />
+      <Footer2 />
       <Footer />
     </>
   );
