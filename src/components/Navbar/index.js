@@ -34,7 +34,7 @@ const Navbar = ({toggle}) => {
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks className='nav-links'>
+                <NavLinks className='nav-links' to='/Gallery'>
                   Photo gallery
                 </NavLinks>
               </NavItem>
