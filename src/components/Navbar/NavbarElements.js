@@ -1,4 +1,4 @@
-import { Link as LinkS } from 'react-scroll';
+// import { Link as LinkS } from 'react-scroll';
 import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -62,9 +62,9 @@ export const NavMenu = styled.ul`
   }
 `;
 
-export const NavItem = styled.li`
-  // height: 80px;
-`;
+// export const NavItem = styled.li`
+//   // height: 80px;
+// `;
 
 export const NavBtn = styled.nav`
   position: absolute;
@@ -79,7 +79,16 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavLinks = styled(LinkS)`
+export const NavBtnLink = styled(LinkR)`
+  padding: 10px 22px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+`;
+
+export const NavLink = styled(LinkR)`
   color: #fff;
   display: flex;
   align-items: center;
@@ -92,13 +101,4 @@ export const NavLinks = styled(LinkS)`
   &.active {
     border-bottom: 3px solid #ffab00;
   }
-`;
-
-export const NavBtnLink = styled(LinkR)`
-  padding: 10px 22px;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
 `;
