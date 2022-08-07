@@ -1,4 +1,3 @@
-// import React, { useState, useEffect } from 'react';
 import '../../styles/Navbar.css'
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
@@ -7,12 +6,11 @@ import {
   MobileIcon,
   Nav,
   NavbarContainer,
-  NavItem,
-  NavLinks,
   NavLogo,
   NavMenu,
   NavBtn,
-  NavBtnLink
+  NavBtnLink,
+  NavLink
 } from './NavbarElements';
 
 const Navbar = ({toggle}) => {
@@ -33,26 +31,18 @@ const Navbar = ({toggle}) => {
               <FaBars />
             </MobileIcon>
             <NavMenu>
-              <NavItem>
-                <NavLinks className='nav-links' to='/Gallery'>
+                <NavLink className='nav-links' to='/Gallery'>
                   Photo gallery
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks className='nav-links'>
+                </NavLink>
+                <NavLink className='nav-links' to='/Location'>
                   Live positions
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks className='nav-links'>
+                </NavLink>
+                <NavLink className='nav-links' to='/Contest'>
                   Contest
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks className='nav-links'>
+                </NavLink>
+                <NavLink className='nav-links' to='/Register'>
                   Register
-                </NavLinks>
-              </NavItem>
+                </NavLink>
             </NavMenu>
             <NavBtn>
               <NavBtnLink to='/Contact'>Contact</NavBtnLink> 
