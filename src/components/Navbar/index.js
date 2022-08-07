@@ -34,7 +34,7 @@ const Navbar = ({toggle}) => {
                 <NavLink className='nav-links' to='/Gallery'>
                   Photo gallery
                 </NavLink>
-                <NavLink className='nav-links' to='/Positions'>
+                <NavLink className='nav-links' to='/Location'>
                   Live positions
                 </NavLink>
                 <NavLink className='nav-links' to='/Contest'>
