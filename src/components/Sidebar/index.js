@@ -1,9 +1,9 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import {
   SidebarContainer,
   Icon,
   CloseIcon,
-  SidebarWrapper,
   SidebarMenu,
   SidebarLink,
 } from './SidebarElements';
@@ -14,25 +14,23 @@ const Sidebar = ({ isOpen, toggle }) => {
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
-      {/* <SidebarWrapper> */}
         <SidebarMenu>
           <SidebarLink>
-            Photo gallery
+            <Link to='/Gallery'>Photo gallery</Link>
           </SidebarLink>
           <SidebarLink>
-            Live positions
+            <Link to='/Location'>Live positions</Link>
           </SidebarLink>
           <SidebarLink>
-            Contest
+            <Link to='/Riders'>Riders</Link>
           </SidebarLink>
           <SidebarLink>
-            Register
+            <Link to='/Contest'>Contest</Link>
           </SidebarLink>
           <SidebarLink>
             Contact
           </SidebarLink>
         </SidebarMenu>
-      {/* </SidebarWrapper> */}
     </SidebarContainer>
   );
 };

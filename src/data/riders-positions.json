@@ -8,7 +8,7 @@
         "NAME": "Dustin",
         "LAST_NAME": "Green",
         "CITY": "Hickory Hills",
-        "STATE": "IL"
+        "STATE": "IL" 
       },
       "geometry": {
         "type": "Point",

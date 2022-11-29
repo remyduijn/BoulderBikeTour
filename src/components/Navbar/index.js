@@ -15,7 +15,7 @@ import {
 
 const Navbar = ({toggle}) => {
 
-  const toggleHome = () => {
+  const toggleHome = () => { 
     scroll.scrollToTop();
   };
 
@@ -37,15 +37,15 @@ const Navbar = ({toggle}) => {
                 <NavLink className='nav-links' to='/Location'>
                   Live positions
                 </NavLink>
+                <NavLink className='nav-links' to='/Riders'>
+                  Riders
+                </NavLink>
                 <NavLink className='nav-links' to='/Contest'>
                   Contest
                 </NavLink>
-                <NavLink className='nav-links' to='/Register'>
-                  Register
-                </NavLink>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to='/Contact'>Contact</NavBtnLink> 
+              <NavBtnLink>Contact</NavBtnLink> 
             </NavBtn>
           </NavbarContainer>
         </Nav>

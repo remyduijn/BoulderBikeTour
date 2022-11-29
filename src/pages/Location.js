@@ -35,7 +35,7 @@ function Map() {
   return (
     <GoogleMap
       defaultZoom={11}
-      defaultCenter={{ lat: 40.014984, lng: -105.270546 }}
+      defaultCenter={{ lat: 40.014984, lng: -105.270546 }} 
       defaultOptions={{ styles: mapStyles }}
     >
       {riderData.features.map((rider) => (
@@ -67,7 +67,7 @@ function Map() {
           >
           <div className="info-wrapper">
             <h3>{selectedRider.properties.NAME} {selectedRider.properties.LAST_NAME}</h3>
-            <p>{selectedRider.properties.CITY}-{selectedRider.properties.STATE}</p>
+            <p>{selectedRider.properties.CITY}, {selectedRider.properties.STATE}</p>
           </div>
         </InfoWindow>
       )}
@@ -86,13 +86,16 @@ export default function Location() {
     setIsOpen(!isOpen);
   };
 
+  const accessKey = process.env.REACT_APP_GOOGLE_KEY; 
+  console.log(accessKey)
+
   return (
     <div>
     <Sidebar isOpen={isOpen} toggle={toggle} />
     <Navbar toggle={toggle} />
     <div className="map-position">
       <MapWrapped
-        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBiZzTC1hUumS42EISzD38qyf_ytqtagNU`}
+        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${accessKey}`}
         loadingElement={<div style={{ height: `100%` }} />}
         containerElement={<div style={{ height: `100%` }} />}
         mapElement={<div style={{ height: `100%` }} />}

@@ -15,7 +15,7 @@ function HeroSection () {
         <div className='masthead'></div>
       </HeroBg>
       <HeroContent>
-        <HeroH1><a className='text-small'>THE</a> Boulder Bike Tour</HeroH1>
+        <HeroH1><c className='text-small'>THE</c> Boulder Bike Tour</HeroH1>
         <HeroP>
           A once in a 10-year opportunity to race the Boulder and the Front Range of Colorado.
         </HeroP>
