@@ -12,14 +12,14 @@ const InfoSection = () => {
   return (
     <InfoContainer id='info'>
       <InfoWrapper>
-        <a>
+        <div>
         <InfoCard>
           <InfoH2>The Boulder Bike Tour course runs 226.2 miles through the Front Range Colorado mountain range, starting in Boulder, CO at an elevation of 5,430 feet (1,655 m) above sea level.</InfoH2>
           <InfoP>
           We will continue to update the information on this page as we get closer to race day and more details become available.
           </InfoP>
-        </InfoCard></a>
-        <a>
+        </InfoCard></div>
+        <div>
         <InfoCard>
           <InfoH2>45,022</InfoH2>
           <InfoP>
@@ -33,7 +33,7 @@ const InfoSection = () => {
           <InfoP>
             COUNTRIES
           </InfoP>
-        </InfoCard></a>       
+        </InfoCard></div>       
       </InfoWrapper>
     </InfoContainer>
   );

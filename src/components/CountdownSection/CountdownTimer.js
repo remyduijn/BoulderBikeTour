@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCountdown } from './hooks/useCountdown';
+import { useCountdown } from '../../hooks/useCountdown';
 import DateTimeDisplay from './DateTimeDisplay';
 
 const ExpiredNotice = () => {
@@ -10,11 +10,11 @@ const ExpiredNotice = () => {
       </div>
     );
   };
-
+ 
   const ShowCounter = ({ days, hours, minutes, seconds }) => {
     return (
       <div className="show-counter">
-        <a className="countdown-link">
+        <div className="countdown-link">
           <DateTimeDisplay value={days} type={'Days'} isDanger={days <= 3} />
           <p>:</p>
           <DateTimeDisplay value={hours} type={'Hours'} isDanger={false} />
@@ -22,11 +22,10 @@ const ExpiredNotice = () => {
           <DateTimeDisplay value={minutes} type={'Mins'} isDanger={false} />
           <p>:</p>
           <DateTimeDisplay value={seconds} type={'Seconds'} isDanger={false} />
-        </a>
+        </div>
       </div>
     );
   };
-  
 
 const CountdownTimer = ({ targetDate }) => {
   const [days, hours, minutes, seconds] = useCountdown(targetDate);
@@ -35,7 +34,7 @@ const CountdownTimer = ({ targetDate }) => {
     return <ExpiredNotice />;
   } else {
     return (
-      <ShowCounter
+      <ShowCounter 
         days={days}
         hours={hours}
         minutes={minutes}

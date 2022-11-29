@@ -8,16 +8,6 @@ div.masthead {
     background-repeat: no-repeat;
     background-size: cover;
 }
- 
-/* @media (min-width:1457px) {div.masthead {
-    background-size: cover;
-}} */
-
-/* @media (max-width:425px) {div.masthead {
-    background: url("../images/remy-small.jpg");
-    background-size: cover;
-    padding-right: 8rem;
-}}  */
 
 .text-small {
     font-size: 24px;
