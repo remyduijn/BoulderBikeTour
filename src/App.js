@@ -9,7 +9,7 @@ import ContestPage from './pages/Contest';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/gallery' element={<GalleryPage/>} />

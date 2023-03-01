@@ -20,25 +20,25 @@ export const Wrapper = styled.div`
 function Slogans(props) { 
   return (
     <div>
-          <div className='wrapper'>
+      <div className='wrapper'>
         <Container>
-        <h1>These slogans are from the API</h1>
-        <hr/>
-        {props.slogans.map((slogan) => {
+          <h1>These slogans are from the API</h1>
+          <hr/>
+          {props.slogans.map((slogan) => {
             return (
               <div key={slogan.id}>
                 <Wrapper>
-                    <H2>{slogan.text}</H2>
-                    <p>Submitted by: {slogan.first_name} {slogan.last_name}</p>
-                    <p>{slogan.email}</p>
-                  </Wrapper>
-                    <hr/>
-                </div>
+                  <H2>{slogan.text}</H2>
+                  <p>Submitted by: {slogan.first_name} {slogan.last_name}</p>
+                  <p>{slogan.email}</p>
+                </Wrapper>
+                  <hr/> 
+              </div>
             );
           })}
         </Container>
         <br/><br/><br/><br/>
-        </div>
+      </div>
     </div>
   );
 }
