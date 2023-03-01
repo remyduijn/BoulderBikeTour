@@ -1,26 +1,16 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.a8345124.css",
-    "main.js": "/React-Portfolio/static/js/main.632a2125.js",
-    "static/media/remy-big.jpg": "/React-Portfolio/static/media/remy-big.1d9f939d25e1907e27ae.jpg",
-    "static/media/remy-small copy 2.jpg": "/React-Portfolio/static/media/remy-small copy 2.7f48053d1c0f31dc6140.jpg",
-    "static/media/resume_RD.pdf": "/React-Portfolio/static/media/resume_RD.4b93c4f60b9fe8926e76.pdf",
-    "static/media/svg-5.svg": "/React-Portfolio/static/media/svg-5.e2efa84b2c15585e5796fa8ba2ec5a7d.svg",
-    "static/media/movie.svg": "/React-Portfolio/static/media/movie.8d634c80ea54bf58207306c066023508.svg",
-    "static/media/diagram.png": "/React-Portfolio/static/media/diagram.66f752c8ea433a5a4d7a.png",
-    "static/media/cloud.png": "/React-Portfolio/static/media/cloud.cf849a5b01dfce5fb7f2.png",
-    "static/media/browser.png": "/React-Portfolio/static/media/browser.417beab112aebc3d8af7.png",
-    "static/media/svg-4.svg": "/React-Portfolio/static/media/svg-4.e41abfa68692a00ffdd8a072e7b1650a.svg",
-    "static/media/laptop.png": "/React-Portfolio/static/media/laptop.799f33523fac2286ee5d.png",
-    "static/media/travel.svg": "/React-Portfolio/static/media/travel.c4643dc6d67a323cd7fa558a9170589b.svg",
-    "static/media/diet.svg": "/React-Portfolio/static/media/diet.b2b97f2ad00bae18f439dae8a0019ae4.svg",
-    "static/media/resume.svg": "/React-Portfolio/static/media/resume.63b56ce6b55135682f7e8dd44839006f.svg",
-    "index.html": "/React-Portfolio/index.html",
-    "main.a8345124.css.map": "/React-Portfolio/static/css/main.a8345124.css.map",
-    "main.632a2125.js.map": "/React-Portfolio/static/js/main.632a2125.js.map"
+    "main.css": "/BoulderBikeTour/static/css/main.7ebfd662.css",
+    "main.js": "/BoulderBikeTour/static/js/main.f786968f.js",
+    "static/media/bikes2-home.jpg": "/BoulderBikeTour/static/media/bikes2-home.a108d27ab260f2673556.jpg",
+    "static/media/bikes-home.jpg": "/BoulderBikeTour/static/media/bikes-home.90acd4150582ea485a72.jpg",
+    "static/media/lake.png": "/BoulderBikeTour/static/media/lake.075490d9f575c6433954.png",
+    "index.html": "/BoulderBikeTour/index.html",
+    "main.7ebfd662.css.map": "/BoulderBikeTour/static/css/main.7ebfd662.css.map",
+    "main.f786968f.js.map": "/BoulderBikeTour/static/js/main.f786968f.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8345124.css",
-    "static/js/main.632a2125.js"
+    "static/css/main.7ebfd662.css",
+    "static/js/main.f786968f.js"
   ]
 }
